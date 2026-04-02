@@ -1,6 +1,4 @@
--- REASON: Dumbass customer put their library in a request and flexed his non existant security and ended up getting it leaked by himself... 😭
--- The code here is horrendous this is my 2nd library, the added on code was made to suit the old code however I should have just converted to a newer version of my code kind of an oopsie. 
-
+--fork of atlanta lib from unknown source.
 -- variables
 	local uis = cloneref(game:GetService("UserInputService"))
 	local players = cloneref(game:GetService("Players"))
@@ -69,7 +67,7 @@
 
 -- library init
 	local library = {
-		directory = "Atlanta",
+		directory = "atlantis",
 		folders = {
 			"/fonts",
 			"/configs",
@@ -222,7 +220,7 @@
 		makefolder(library.directory .. path)
 	end 
 
-	writefile("ffff.ttf", game:HttpGet("https://github.com/weasely111/beta/raw/refs/heads/main/fs-tahoma-8px.ttf"))
+	writefile("ffff.ttf", game:HttpGet("https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/JetBrainsMono/NoLigatures/Medium/JetBrainsMonoNLNerdFont-Medium.ttf"))
 
 	local tahoma = {
 		name = "SmallestPixel7",
@@ -814,8 +812,8 @@
 						Name = "",
 						Rotation = 90,
 						Color = rgbseq{
-							rgbkey(0, rgb(41, 41, 55)),
-							rgbkey(1, rgb(35, 35, 47))
+							themes.preset.high_contrast,
+							themes.preset.low_contrast
 						}
 					})
 					
