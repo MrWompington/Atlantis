@@ -1827,7 +1827,7 @@
 			return setmetatable(window, library)
 		end
 	end
-
+end
 		function library:watermark(options) 
 			local cfg = {
 				default = options.text or options.default or os.date('drain.lol | %b %d %Y | %H:%M')
