@@ -812,9 +812,9 @@
 						Name = "",
 						Rotation = 90,
 						Color = rgbseq{
-							rgbkey(themes.preset.high_contrast),
-							rgbkey(themes.preset.low_contrast)
-						}
+    rgbkey(0, themes.preset.high_contrast),
+    rgbkey(1, themes.preset.low_contrast)
+}
 					})
 					
 					library:apply_theme(items.UIGradient, "contrast", "Color") 
