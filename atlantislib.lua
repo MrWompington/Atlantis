@@ -926,7 +926,7 @@
 			
 			return setmetatable(cfg, library)
 		end 
-function init()
+function library:init()
 
 		local sgui = library:create("ScreenGui", {
 			Enabled = true,
