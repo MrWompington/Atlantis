@@ -952,6 +952,8 @@
 			end 
 		end 
 
+		function library:init()
+		do
 		function library:indicator() 
 			local cfg = {
 				items = {};
@@ -1824,6 +1826,7 @@
 
 			return setmetatable(window, library)
 		end
+	end
 
 		function library:watermark(options) 
 			local cfg = {
