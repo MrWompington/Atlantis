@@ -926,6 +926,7 @@
 			
 			return setmetatable(cfg, library)
 		end 
+function init()
 
 		local sgui = library:create("ScreenGui", {
 			Enabled = true,
@@ -1524,7 +1525,6 @@
 					PaddingLeft = dim(0, 5)
 				})
 			--  
-
 			-- main window
 				local main_window = library:panel({
 					name = properties and properties.name or "Atlanta | ", 
@@ -2344,6 +2344,7 @@
 
 			return setmetatable(cfg, library)
 		end
+end
 
 		function library:refresh_notifications()  	
 			for _, notif in next, library.notifications do 
