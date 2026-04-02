@@ -812,8 +812,8 @@
 						Name = "",
 						Rotation = 90,
 						Color = rgbseq{
-							themes.preset.high_contrast,
-							themes.preset.low_contrast
+							rgbkey(themes.preset.high_contrast),
+							rgbkey(themes.preset.low_contrast)
 						}
 					})
 					
